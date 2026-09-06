@@ -1,0 +1,134 @@
+[
+  {
+    "id": "api",
+    "title": "Buy a data call",
+    "rail": "Stablecoin \u00b7 illustrative x402 flow",
+    "setup": "An approved data provider charges an illustrative $0.02. The sponsor allows at most $1 today.",
+    "steps": [
+      {
+        "title": "Request data",
+        "detail": "The agent asks the service for a specified resource.",
+        "boundary": "No payment permission follows from discovering a URL.",
+        "failure": "A malicious endpoint can ask for more than the intended task.",
+        "owner": "Agent"
+      },
+      {
+        "title": "Read the quote",
+        "detail": "The 402 response describes amount, token, network, recipient and expiry.",
+        "boundary": "The server names its price; it cannot grant spending authority.",
+        "failure": "A stale quote or wrong network should stop this attempt.",
+        "owner": "Service"
+      },
+      {
+        "title": "Check permission",
+        "detail": "A wallet policy checks provider, amount and remaining budget before signing.",
+        "boundary": "This is the boundary before money is committed.",
+        "failure": "An over-budget attempt is rejected even if the agent asks confidently.",
+        "owner": "Sponsor policy + wallet"
+      },
+      {
+        "title": "Pay and retry",
+        "detail": "Signed payment data accompanies the retry; the server or optional facilitator verifies and settles.",
+        "boundary": "A valid signature and a settled transfer are different states.",
+        "failure": "Use receipt matching and idempotency; do not blindly pay again after a timeout.",
+        "owner": "Wallet + facilitator + network"
+      },
+      {
+        "title": "Check the result",
+        "detail": "The agent checks format and usefulness and saves the receipt.",
+        "boundary": "The payment receipt does not certify factual accuracy.",
+        "failure": "Missing or incorrect data needs application-level recovery and refund terms.",
+        "owner": "Buyer + service"
+      }
+    ],
+    "sourceIds": ["x402", "facilitator"]
+  },
+  {
+    "id": "checkout",
+    "title": "Check out a cart",
+    "rail": "Existing card \u00b7 blockchain not required",
+    "setup": "A shopper chooses goods through an assistant. The merchant owns inventory, fulfillment and support.",
+    "steps": [
+      {
+        "title": "Build the cart",
+        "detail": "Retrieve current stock, options, shipping and tax.",
+        "boundary": "The merchant is the authoritative source of the quote.",
+        "failure": "Out-of-stock items or price changes invalidate stale assumptions.",
+        "owner": "Merchant + assistant"
+      },
+      {
+        "title": "Approve purchase",
+        "detail": "The shopper approves the final cart and total, or a precise prior mandate permits it.",
+        "boundary": "A recommendation is not permission to buy.",
+        "failure": "A changed purchase outside the mandate needs renewed approval.",
+        "owner": "Shopper"
+      },
+      {
+        "title": "Scope credentials",
+        "detail": "Use a merchant-, amount- or time-limited credential where the integration supports it.",
+        "boundary": "The assistant should not receive unrestricted card secrets.",
+        "failure": "Scope or expiry mismatches stop the purchase.",
+        "owner": "Credential provider"
+      },
+      {
+        "title": "Authorize payment",
+        "detail": "The merchant submits the order and requests payment authorization.",
+        "boundary": "Authorization, capture and bank payout occur at different stages.",
+        "failure": "A card decline or duplicate order needs a safe retry policy.",
+        "owner": "Processor + network + issuer"
+      },
+      {
+        "title": "Fulfill and support",
+        "detail": "The merchant ships, reports status and handles returns and refunds.",
+        "boundary": "The order receipt is not proof of delivery.",
+        "failure": "Late delivery follows merchant and network dispute rules.",
+        "owner": "Merchant"
+      }
+    ],
+    "sourceIds": ["ucp", "ap2", "acp", "visa-agent"]
+  },
+  {
+    "id": "job",
+    "title": "Hire another agent",
+    "rail": "Escrow \u00b7 illustrative Virtuals-style job",
+    "setup": "A buyer agent commissions a research deliverable under an approved budget and explicit acceptance criteria.",
+    "steps": [
+      {
+        "title": "Define success",
+        "detail": "Specify the deliverable, deadline and acceptance tests.",
+        "boundary": "A vague job cannot become objectively good just by putting it onchain.",
+        "failure": "Ambiguous criteria create disputes later.",
+        "owner": "Sponsor + buyer"
+      },
+      {
+        "title": "Agree terms",
+        "detail": "Confirm the provider, price, evaluator and permitted budget.",
+        "boundary": "Approval must happen before funds are committed.",
+        "failure": "An unauthorized provider or changed terms must stop the job.",
+        "owner": "Buyer policy"
+      },
+      {
+        "title": "Fund escrow",
+        "detail": "Reserve payment under the contract rules.",
+        "boundary": "Reserved money is not money already paid to the provider.",
+        "failure": "Contract errors and unsupported assets remain risks.",
+        "owner": "Wallet + escrow"
+      },
+      {
+        "title": "Evaluate delivery",
+        "detail": "The provider submits work; buyer or evaluator checks the agreed criteria.",
+        "boundary": "Evaluation supplies a judgment, not guaranteed truth.",
+        "failure": "Evaluator error, collusion and unusable work are possible.",
+        "owner": "Provider + buyer/evaluator"
+      },
+      {
+        "title": "Resolve the job",
+        "detail": "Approval releases payment; rejection or expiry follows the actual implementation.",
+        "boundary": "There is no universal refund promise across all job protocols.",
+        "failure": "Read the release, dispute and timeout rules before funding.",
+        "owner": "Escrow + authorized evaluator"
+      }
+    ],
+    "sourceIds": ["virtuals", "evaluation"]
+  }
+]

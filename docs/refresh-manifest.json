@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "timeZone": "America/New_York",
+  "dailyOnly": true,
+  "metrics": [
+    {
+      "id": "stablecoins",
+      "url": "https://stablecoins.llama.fi/stablecoincharts/Solana",
+      "parser": "stablecoins"
+    },
+    {
+      "id": "tvl",
+      "url": "https://api.llama.fi/v2/historicalChainTvl/Solana",
+      "parser": "tvl"
+    },
+    {
+      "id": "dex-volume",
+      "url": "https://api.llama.fi/overview/dexs/Solana?excludeTotalDataChartBreakdown=true",
+      "parser": "monthly"
+    },
+    {
+      "id": "chain-fees",
+      "url": "https://api.llama.fi/summary/fees/solana?dataType=dailyFees",
+      "parser": "monthly"
+    }
+  ],
+  "reviewSourceIds": [
+    "mpp",
+    "acp",
+    "alpenglow",
+    "fees",
+    "clarity",
+    "cushy",
+    "paysh",
+    "arc"
+  ],
+  "policy": "API checks can update supported metrics only. Page changes create review flags, never rewrite research or advance article review dates. Failed/changed schemas retain the last good metric. RWA, payment estimates, developer counts and app-only revenue require substantive manual verification."
+}

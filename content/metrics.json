@@ -1,0 +1,195 @@
+[
+  {
+    "id": "stablecoins",
+    "label": "Circulating stablecoins",
+    "value": 16607547915.19,
+    "unit": "USD",
+    "period": "2026-09-05",
+    "scope": "Solana",
+    "definition": "Sum of totalCirculatingUSD across all peg types; includes circulating native and bridged supply tracked by DefiLlama.",
+    "sourceId": "research-38",
+    "checkedAt": "2026-09-05",
+    "asOf": "2026-09-05",
+    "kind": "snapshot",
+    "aggregation": "Point-in-time API observation at listed UTC timestamp; month-end dates plus Sep 5 snapshot. Not monthly average.",
+    "series": [
+      {
+        "period": "2025-12-31",
+        "value": 14951488709
+      },
+      {
+        "period": "2026-01-31",
+        "value": 13665269012
+      },
+      {
+        "period": "2026-02-28",
+        "value": 15502505216
+      },
+      {
+        "period": "2026-03-31",
+        "value": 14966504369
+      },
+      {
+        "period": "2026-04-30",
+        "value": 15273781362
+      },
+      {
+        "period": "2026-05-31",
+        "value": 14958471371
+      },
+      {
+        "period": "2026-06-30",
+        "value": 15416930876
+      },
+      {
+        "period": "2026-07-31",
+        "value": 16187806063
+      },
+      {
+        "period": "2026-08-31",
+        "value": 15964831872
+      },
+      {
+        "period": "2026-09-05",
+        "value": 16607547915.19
+      }
+    ]
+  },
+  {
+    "id": "tvl",
+    "label": "DeFi TVL (default methodology)",
+    "value": 5888810402,
+    "unit": "USD",
+    "period": "2026-09-05",
+    "scope": "Solana",
+    "definition": "DefiLlama default historical chain DeFi TVL. Do not add separately displayed liquid-staking, borrowing or bridged-TVL categories.",
+    "sourceId": "research-39",
+    "checkedAt": "2026-09-05",
+    "asOf": "2026-09-05",
+    "kind": "snapshot",
+    "aggregation": "Point-in-time API observation at listed UTC timestamp; month-end dates plus Sep 5 snapshot. Not monthly average.",
+    "series": [
+      {
+        "period": "2025-12-31",
+        "value": 7935106224
+      },
+      {
+        "period": "2026-01-31",
+        "value": 8114946151
+      },
+      {
+        "period": "2026-02-28",
+        "value": 6475937655
+      },
+      {
+        "period": "2026-03-31",
+        "value": 6181359326
+      },
+      {
+        "period": "2026-04-30",
+        "value": 5432322474
+      },
+      {
+        "period": "2026-05-31",
+        "value": 5412215729
+      },
+      {
+        "period": "2026-06-30",
+        "value": 4916050730
+      },
+      {
+        "period": "2026-07-31",
+        "value": 4828334694
+      },
+      {
+        "period": "2026-08-31",
+        "value": 5787575494
+      },
+      {
+        "period": "2026-09-05",
+        "value": 5888810402
+      }
+    ]
+  },
+  {
+    "id": "rwa",
+    "label": "Distributed RWA value, excluding stablecoins",
+    "value": 4230000000,
+    "unit": "USD",
+    "period": "2026-09-06",
+    "scope": "Solana",
+    "definition": "Represented value $125.86M separately; do not add or compare to other providers without harmonizing definitions. Source date only; timezone unspecified. Captured Sep 6 UTC / Sep 5 New York.",
+    "sourceId": "research-40",
+    "checkedAt": "2026-09-05",
+    "asOf": "2026-09-06",
+    "kind": "snapshot"
+  },
+  {
+    "id": "chain-fees",
+    "label": "Chain transaction fees",
+    "value": 22206168,
+    "unit": "USD",
+    "period": "2026-08-01 to 2026-08-31",
+    "scope": "Solana",
+    "definition": "Transaction fees paid by users per Solana adapter; not app revenue or issuer income.",
+    "sourceId": "research-41",
+    "checkedAt": "2026-09-05",
+    "asOf": "2026-08-31",
+    "kind": "historical"
+  },
+  {
+    "id": "dex-volume",
+    "label": "DEX spot turnover",
+    "value": 64032549851.66,
+    "unit": "USD",
+    "period": "2026-08-01 to 2026-08-31",
+    "scope": "Solana",
+    "definition": "Tracked decentralized-exchange spot trading volume on Solana; not payments, users, net flows or revenue.",
+    "sourceId": "research-42",
+    "checkedAt": "2026-09-05",
+    "asOf": "2026-08-31",
+    "kind": "historical",
+    "aggregation": "Sum of all daily UTC observations in each complete calendar month.",
+    "series": [
+      {
+        "period": "2026-06",
+        "value": 67106826376.310005
+      },
+      {
+        "period": "2026-07",
+        "value": 53138877441.00001
+      },
+      {
+        "period": "2026-08",
+        "value": 64032549851.66
+      }
+    ]
+  },
+  {
+    "id": "payment-volume",
+    "label": "Observable real-economy stablecoin payments",
+    "value": 20000000000,
+    "unit": "USD",
+    "period": "2025-01-01 to 2025-12-31",
+    "scope": "Solana",
+    "definition": "BCG/Allium behavior-based bilateral goods/services payment estimate; excludes specified offchain activity. Not all transfers or current share.",
+    "sourceId": "research-43",
+    "checkedAt": "2026-09-05",
+    "asOf": "2025-12-31",
+    "kind": "historical",
+    "upper": 35000000000
+  },
+  {
+    "id": "alpenglow-target",
+    "label": "Alpenglow target",
+    "value": 150,
+    "unit": "ms",
+    "period": "Design target",
+    "scope": "Consensus finality",
+    "definition": "A design target, not a measurement of current mainnet finality or end-to-end application latency.",
+    "sourceId": "alpenglow",
+    "checkedAt": "2026-09-05",
+    "asOf": "2026-09-05",
+    "kind": "target"
+  }
+]

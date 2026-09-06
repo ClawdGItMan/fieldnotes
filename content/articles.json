@@ -1,0 +1,522 @@
+[
+  {
+    "id": "when-software-buys",
+    "topic": "payments",
+    "title": "When software becomes the buyer",
+    "dek": "Follow the job first. Then follow the money.",
+    "takeaway": "Agentic payments are defined by delegated permission, not by the blockchain underneath.",
+    "kind": "Explainer",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "readMinutes": 2,
+    "sections": [
+      {
+        "title": "The first question is permission",
+        "body": [
+          "An agentic payment happens when software buys something as part of delegated work. The important boundary is who permitted the agent to spend, on which seller or task, and within what amount and duration. A useful recommendation is not an authorization.",
+          "Separate five jobs: authorize, hold credentials, agree the purchase, move money, and check delivery. A protocol can solve one job without solving the others."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      },
+      {
+        "title": "The stack is becoming more specialized",
+        "body": [
+          "AP2 expresses mandates. UCP and OpenAI/Stripe ACP coordinate commerce. x402 and MPP negotiate service payments. Wallet providers control credentials. Virtuals ACP adds a job and evaluation lifecycle. Their overlap is more informative than a single ranking."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["ap2", "ucp", "acp", "x402", "mpp", "virtuals"]
+      },
+      {
+        "title": "A receipt is not a verdict",
+        "body": [
+          "A service can deliver valid JSON containing wrong information. A payment can settle while a bank payout remains pending. An evaluator can approve poor work. These are distinct operational failures; a faster chain does not collapse them into one solved problem."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      },
+      {
+        "title": "What makes this a real market",
+        "body": [
+          "The useful signal is repeat spending on useful work by unaffiliated customers, after funding, service, dispute and payout costs. Demo calls, incentives and protocol events can be evidence of experimentation without proving durable demand."
+        ],
+        "kind": "outlook",
+        "sourceIds": []
+      }
+    ],
+    "sourceIds": ["ap2", "ucp", "acp", "x402", "mpp", "virtuals"],
+    "related": ["blockchain-fit", "payments-outlook", "two-acps"],
+    "tags": ["permission", "wallets", "settlement"],
+    "provenance": {
+      "kind": "curated-research",
+      "label": "Primary-source research and study synthesis"
+    }
+  },
+  {
+    "id": "blockchain-fit",
+    "topic": "payments",
+    "title": "Does this payment need a blockchain?",
+    "dek": "A decision about the whole purchase, not just the network fee.",
+    "takeaway": "Use a shared ledger when it removes a real coordination problem; conventional billing can be the better answer.",
+    "kind": "Explainer",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "readMinutes": 2,
+    "sections": [
+      {
+        "title": "Where a shared ledger can help",
+        "body": [
+          "The strongest cases include unfamiliar services selling small resources, parties already funded in compatible stablecoins, programmable escrow across organizations, and cross-border settlement that benefits from continuous availability. Open payment standards can reduce bespoke account setup.",
+          "A common record helps multiple parties reconcile who paid and under what terms. It does not remove the need to understand counterparties, keys or the terms of the asset."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      },
+      {
+        "title": "Where existing billing is simpler",
+        "body": [
+          "A known cloud vendor can meter usage internally and invoice monthly. A consumer buying from a familiar merchant may prefer established card dispute and refund processes. A platform can aggregate tiny internal actions into a larger payment instead of settling each action."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      },
+      {
+        "title": "Price the entire journey",
+        "body": [
+          "Compare account setup, funding, conversion, screening, liquidity, service fees, refunds and payout timing. Bridge documents supported routes and regional restrictions: open protocol design does not mean every intermediary can serve every user."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["bridge"]
+      },
+      {
+        "title": "A practical test",
+        "body": [
+          "Can both parties already receive the same money? Does an external shared record or escrow materially help? Is the alternative a simple existing invoice? The answers matter more than whether a transfer is cheap in isolation."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      },
+      {
+        "title": "Why the chains want this activity",
+        "kind": "analysis",
+        "sourceIds": [],
+        "body": [
+          "A service that earns repeat payments can attract developers, wallets, liquidity and distribution to its settlement network. That recurring useful demand is different from a temporary trading surge. Networks compete on access to customers and money as well as fees, reliability and developer experience.",
+          "More transactions do not guarantee more value for a native token. Very low fees can mean little fee demand per purchase; apps, stablecoin issuers, wallet providers and facilitators may capture most of the economics. Examine who earns each dollar and which fees actually accrue to validators, a treasury or holders."
+        ]
+      }
+    ],
+    "sourceIds": ["facilitator", "mpp", "bridge"],
+    "related": ["when-software-buys", "payments-outlook"],
+    "tags": ["blockchain", "cards", "invoices", "escrow"],
+    "provenance": {
+      "kind": "curated-research",
+      "label": "Primary-source research and study synthesis"
+    }
+  },
+  {
+    "id": "two-acps",
+    "topic": "payments",
+    "title": "Two ACPs. Two different jobs.",
+    "dek": "The acronym collision that makes the landscape harder to read.",
+    "takeaway": "OpenAI/Stripe Agentic Commerce Protocol is about merchant commerce; Virtuals Agent Commerce Protocol is about agent jobs.",
+    "kind": "Explainer",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "readMinutes": 2,
+    "sections": [
+      {
+        "title": "Shopping and merchant operations",
+        "body": [
+          "OpenAI and Stripe introduced Agentic Commerce Protocol for AI-assisted commerce. OpenAI’s March 24, 2026 direction emphasizes richer product discovery and merchant-owned checkout. Do not treat the original 2025 Instant Checkout scope as universal current availability."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["acp"]
+      },
+      {
+        "title": "Agents hiring other agents",
+        "body": [
+          "Virtuals’ Agent Commerce Protocol describes jobs, agreed terms, escrow and deliverable evaluation. A buyer or optional evaluator approves work before release. This establishes an evaluation mechanism, not the truth or competence of its judgment."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["virtuals", "evaluation"]
+      },
+      {
+        "title": "How to keep them straight",
+        "body": [
+          "Ask what is being coordinated: a merchant cart and order, or a job with a deliverable. Then name the provider as well as the acronym. Neither acronym alone tells you the settlement asset, network or deployed integration."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      }
+    ],
+    "sourceIds": ["acp", "virtuals", "evaluation"],
+    "related": ["when-software-buys", "blockchain-fit"],
+    "tags": ["ACP", "OpenAI", "Stripe", "Virtuals"],
+    "provenance": {
+      "kind": "curated-research",
+      "label": "Primary-source research and study synthesis"
+    }
+  },
+  {
+    "id": "payments-outlook",
+    "topic": "payments",
+    "title": "A market with more than one possible future",
+    "dek": "Three scenarios, and the observations that would distinguish them.",
+    "takeaway": "Distribution and repeat useful purchases are better tests than a chain leaderboard.",
+    "kind": "Outlook",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "readMinutes": 2,
+    "sections": [
+      {
+        "title": "Base case: several rails coexist",
+        "body": [
+          "Assistants use established merchant payment systems. Machine services add stablecoin charges where account setup is burdensome. Watch repeat paid usage, production integrations, payer retention and refund behavior."
+        ],
+        "kind": "outlook",
+        "sourceIds": []
+      },
+      {
+        "title": "Upside: an open service market",
+        "body": [
+          "Agents discover unfamiliar providers, buy bounded work and switch vendors. Evidence would include unaffiliated repeat customers, interoperable credentials, reliable evaluation and lower integration costs after every fee is counted."
+        ],
+        "kind": "outlook",
+        "sourceIds": []
+      },
+      {
+        "title": "Downside: most payments stay bundled",
+        "body": [
+          "Enterprises retain contracted vendors and monthly invoices. Marketplaces struggle with trust or value. Watch subsidies, high test shares, low retention, expensive disputes and persistent human approval at each step."
+        ],
+        "kind": "outlook",
+        "sourceIds": []
+      },
+      {
+        "title": "Different distribution paths",
+        "body": [
+          "Base has CDP integrations. Solana is supported by payment tooling. Tempo has a payment-focused design and Stripe integration. Circle can benefit from USDC across chains while Arc competes for settlement activity. These are possible advantages, not a verified ordering. Circle’s August 5 release describes private Arc mainnet with public launch planned for September 16, 2026."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["wallets", "mpp", "tempo", "arc"]
+      }
+    ],
+    "sourceIds": ["wallets", "mpp", "tempo", "arc"],
+    "related": ["blockchain-fit", "when-software-buys"],
+    "tags": ["forecast", "Base", "Tempo", "Arc", "Solana"],
+    "provenance": {
+      "kind": "curated-research",
+      "label": "Primary-source research and study synthesis"
+    }
+  },
+  {
+    "id": "finality",
+    "topic": "solana",
+    "title": "Faster finality, without the category errors",
+    "dek": "What Alpenglow changes—and what its headline number leaves out.",
+    "takeaway": "A finality target is not an end-to-end payment guarantee.",
+    "kind": "Explainer",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "readMinutes": 2,
+    "sections": [
+      {
+        "title": "Voting and propagation are different upgrades",
+        "body": [
+          "Votor replaces TowerBFT voting with direct validator messages and certificates. Rotor is a later propagation phase. The design’s fast path uses at least 80% stake in one round; the fallback uses 60% thresholds over two rounds."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["alpenglow"]
+      },
+      {
+        "title": "What 150 milliseconds means",
+        "body": [
+          "Anza’s roughly 150 ms median estimate comes from simulations using a mainnet stake distribution, excluding computation overhead. It is not a measured total from a user clicking Pay to receiving goods or fiat."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["anza"]
+      },
+      {
+        "title": "The useful product distinction",
+        "body": [
+          "Confirmed state has a supermajority vote; finalized state is the strongest commitment the network recognizes. Reducing the wait for stronger commitment can simplify dependent workflows. Consensus guarantees still depend on fault assumptions; application, custody and operational failures remain."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["commitment"]
+      }
+    ],
+    "sourceIds": ["alpenglow", "anza", "commitment"],
+    "related": ["decentralization", "value-capture"],
+    "tags": ["Alpenglow", "latency", "Votor", "Rotor"],
+    "provenance": {
+      "kind": "curated-research",
+      "label": "Primary-source research and study synthesis"
+    }
+  },
+  {
+    "id": "decentralization",
+    "topic": "solana",
+    "title": "Count the ways a network can fail",
+    "dek": "Stake, software, operators and hosting are different dimensions.",
+    "takeaway": "A Nakamoto coefficient counts a blocking set; it does not describe all correlated risks.",
+    "kind": "Explainer",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "readMinutes": 2,
+    "sections": [
+      {
+        "title": "What the coefficient counts",
+        "body": [
+          "The Solana voting metric discussed in the historical network report counts the smallest set reaching roughly one-third of voting power. That set can obstruct consensus; this does not mean it can automatically steal funds or rewrite valid history. The report’s measured coefficient belongs to April 2025."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["nakamoto"]
+      },
+      {
+        "title": "Is 19 good?",
+        "body": [
+          "Nineteen was the example raised in the study, not a verified current reading. It indicates meaningful distribution under that counting method, with no universal good cutoff. Compare the same methodology over time, then inspect whether apparently separate validators share owners, software or infrastructure."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      },
+      {
+        "title": "Names are not independent implementations",
+        "body": [
+          "Full Firedancer is built independently. Frankendancer combines Firedancer components with Agave. Counting branded variants as completely independent clients can overstate resilience to a shared bug."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["clients"]
+      },
+      {
+        "title": "Hosting adds another axis",
+        "body": [
+          "Validators can share a provider across different physical data centers. Solana Foundation delegation criteria treat data-center and ASN/provider concentration separately. A stake metric alone cannot capture those dependencies."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["hosting"]
+      }
+    ],
+    "sourceIds": ["nakamoto", "clients", "hosting"],
+    "related": ["finality", "value-capture"],
+    "tags": ["Nakamoto", "validators", "Firedancer"],
+    "provenance": {
+      "kind": "curated-research",
+      "label": "Primary-source research and study synthesis"
+    }
+  },
+  {
+    "id": "value-capture",
+    "topic": "solana",
+    "title": "Activity, revenue and the token are three stories",
+    "dek": "Why a busy ecosystem need not translate into the same tokenholder outcome.",
+    "takeaway": "Compare app economics, validator economics and token supply on their own terms.",
+    "kind": "Explainer",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "readMinutes": 2,
+    "sections": [
+      {
+        "title": "Follow the beneficiary",
+        "body": [
+          "Applications collect fees for a service. Validators receive particular network payments and rewards. Tokenholders may benefit through staking, supply effects or demand, depending on the design. A large activity count is not a complete account of any of those flows."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      },
+      {
+        "title": "Correct the fee-burn claim",
+        "body": [
+          "Solana’s official fee documentation still describes burning half the base fee, with all prioritization fees going to validators. The statement that Solana has no fee burn is inaccurate. Whether burns offset issuance requires a consistent same-period calculation."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["fees"]
+      },
+      {
+        "title": "Buybacks versus available supply",
+        "body": [
+          "Issuance creates tokens. Unlocks release existing restrictions. Buybacks purchase tokens. Burns destroy them. Revenue-funded purchases can weaken when trading slows while scheduled releases continue. But unlocks are not automatic sales, and treasury purchases are not permanent removal."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      },
+      {
+        "title": "Use the right comparison",
+        "body": [
+          "Compare tokens bought with newly transferable tokens over the same period, then investigate actual selling, other demand and the destination of purchases. A gross coverage ratio is a diagnostic, not a price forecast."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      }
+    ],
+    "sourceIds": ["fees"],
+    "related": ["decentralization", "finality"],
+    "tags": ["buybacks", "emissions", "fees", "tokenomics"],
+    "provenance": {
+      "kind": "curated-research",
+      "label": "Primary-source research and study synthesis"
+    }
+  },
+  {
+    "id": "institutions-evidence",
+    "topic": "institutions",
+    "title": "From institutional logos to actual use",
+    "dek": "A guide to reading partnership announcements without overstating adoption.",
+    "takeaway": "Distinguish an announcement, a usable product, an executed transaction and sustained usage.",
+    "kind": "Evidence",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "readMinutes": 2,
+    "sections": [
+      {
+        "title": "What is already concrete",
+        "body": [
+          "Visa identifies Cross River and Lead Bank as settling Visa obligations in USDC over Solana. J.P. Morgan documents arranging a Galaxy commercial-paper transaction. These support specific uses, not whole-bank adoption."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["visa-banks", "jpm"]
+      },
+      {
+        "title": "Availability has boundaries",
+        "body": [
+          "Singapore Gulf Bank’s launch targets corporate and high-net-worth customers with a launch transaction threshold. Western Union’s USDPT token launched while several services were still developing. CUSHY has qualified-purchaser restrictions. Token existence is not unrestricted access or instant redemption."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["sgb", "wu", "cushy"]
+      },
+      {
+        "title": "Infrastructure can precede volume",
+        "body": [
+          "R3 documents a Solana notary and atomic Corda/Solana operations. That does not show that every Corda bank uses the integration. Similarly, Pay.sh supports API payments and discovery; it does not independently certify the quality of a purchased answer."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["r3", "paysh"]
+      },
+      {
+        "title": "The next test",
+        "body": [
+          "Look for repeat transactions, counterparties served, production coverage, economics and failures. A company’s global footprint is a distribution possibility, not a measurement of usage of its new blockchain feature."
+        ],
+        "kind": "analysis",
+        "sourceIds": []
+      }
+    ],
+    "sourceIds": ["visa-banks", "jpm", "sgb", "wu", "cushy", "r3", "paysh"],
+    "related": ["clarity", "when-software-buys"],
+    "tags": ["banks", "RWA", "Visa", "JPMorgan"],
+    "provenance": {
+      "kind": "curated-research",
+      "label": "Primary-source research and study synthesis"
+    }
+  },
+  {
+    "id": "clarity",
+    "topic": "institutions",
+    "title": "CLARITY: durability, procedure and the text",
+    "dek": "Why legislative progress needs more precise language.",
+    "takeaway": "A procedural milestone is not an enacted legal framework.",
+    "kind": "Explainer",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "readMinutes": 2,
+    "sections": [
+      {
+        "title": "The subject of the bill",
+        "body": [
+          "The introduced CLARITY bill addresses digital commodities and SEC/CFTC responsibilities. The enacted text and implementation, if any, determine actual obligations. A proposal should not be translated into blanket approval of a token or business."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["clarity"]
+      },
+      {
+        "title": "Different kinds of authority",
+        "body": [
+          "The SEC’s 2025 liquid-staking staff statement expressly says it has no legal force and covers specific circumstances. Statutory rules, agency rules and staff views have different legal weight. Their practical effects should not be collapsed into one category."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["sec"]
+      },
+      {
+        "title": "The dated procedural check",
+        "body": [
+          "The Senate Press Gallery’s September 4, 2026 notice states that the H.R.3633 cloture motion ripens September 15 at 2:15 p.m. This establishes a procedural schedule, not enactment or certainty of passage."
+        ],
+        "kind": "evidence",
+        "sourceIds": ["senate"]
+      }
+    ],
+    "sourceIds": ["clarity", "sec", "senate"],
+    "related": ["institutions-evidence"],
+    "tags": ["CLARITY", "SEC", "CFTC", "policy"],
+    "provenance": {
+      "kind": "curated-research",
+      "label": "Primary-source research and study synthesis"
+    }
+  },
+  {
+    "id": "solana-opportunities",
+    "topic": "solana",
+    "title": "Follow the useful money.",
+    "dek": "Liquidity is growing in one place and shrinking in another. The opportunity is in workflows that customers finish.",
+    "takeaway": "Track liquidity, delivery and recurring economics separately. Institutional launches can grow while speculative liquidity contracts.",
+    "kind": "Evidence",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "readMinutes": 3,
+    "sections": [
+      {
+        "title": "An uneven growth story",
+        "kind": "evidence",
+        "sourceIds": ["research-38", "research-39"],
+        "body": [
+          "Circulating stablecoins rose from $14.951 billion on December 31, 2025 to $16.608 billion on September 5, 2026 in the same DefiLlama API series. Default DeFi TVL fell from $7.935 billion to $5.889 billion over that period. These measure different things.",
+          "Stablecoins can sit outside DeFi. Dollar TVL moves with prices as well as deposits and withdrawals. Neither number is a count of customers or a measure of economic payments."
+        ]
+      },
+      {
+        "title": "Treasury that finishes the payment",
+        "kind": "analysis",
+        "sourceIds": ["wu", "moneygram"],
+        "body": [
+          "Bank settlement, USDPT and cash ramps connect bank accounts, stablecoins and recipients. The product opportunity is in reconciliation, corridor routing and reliable redemption.",
+          "Ask who bears FX costs, where funds wait, whether the recipient can cash out, and whether total cost improves after every fee. A live token is a starting point for a workflow, not its outcome."
+        ]
+      },
+      {
+        "title": "Usable investment assets",
+        "kind": "analysis",
+        "sourceIds": ["wisdomtree", "cushy"],
+        "body": [
+          "Token issuance alone is not usable finance. Watch retained assets, pricing, eligible counterparties, redemptions, secondary liquidity and collateral acceptance.",
+          "Qualified-purchaser restrictions still apply to CUSHY. Planned integrations are not current collateral support, and a public chain does not make a private fund a retail product."
+        ]
+      },
+      {
+        "title": "Controlled machine payments",
+        "kind": "outlook",
+        "sourceIds": ["mastercard", "paysh"],
+        "body": [
+          "The plausible opportunity is repeated, budgeted purchases that save more effort than they cost. Track paying customers, repeat use, net margins and refund handling.",
+          "Foundation work with payment networks and open standards is evidence of infrastructure investment. It does not yet establish mass agent commerce or durable SOL value capture."
+        ]
+      }
+    ],
+    "sourceIds": [
+      "research-38",
+      "research-39",
+      "wu",
+      "moneygram",
+      "wisdomtree",
+      "cushy",
+      "mastercard",
+      "paysh"
+    ],
+    "related": ["value-capture", "institutions-evidence", "blockchain-fit"],
+    "tags": ["growth", "treasury", "RWA", "opportunities"],
+    "provenance": {
+      "kind": "curated-research",
+      "label": "Primary-source research and dated API observations"
+    }
+  }
+]

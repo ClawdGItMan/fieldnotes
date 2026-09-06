@@ -1,0 +1,142 @@
+[
+  {
+    "id": "milestone-0",
+    "name": "R3; Solana Foundation",
+    "group": "Infrastructure",
+    "date": "2025-05-22",
+    "stage": "Announced",
+    "summary": "Collaboration to connect Corda/private networks with Solana. Potential institutional interoperability.",
+    "limit": "Corda assets and banks are not automatically migrated.",
+    "sourceIds": ["research-44"]
+  },
+  {
+    "id": "milestone-1",
+    "name": "J.P. Morgan; Galaxy; Coinbase; Franklin Templeton",
+    "group": "Capital markets",
+    "date": "2025-12-11",
+    "stage": "Demonstrated transaction",
+    "summary": "Galaxy commercial paper issuance arranged on Solana, with USDC delivery-versus-payment. Shows coordinated asset and payment settlement.",
+    "limit": "One transaction does not establish recurring volume.",
+    "sourceIds": ["jpm"]
+  },
+  {
+    "id": "milestone-2",
+    "name": "Visa; Cross River Bank; Lead Bank",
+    "group": "Bank settlement",
+    "date": "2025-12-16",
+    "stage": "Live product",
+    "summary": "Initial U.S. banks began USDC settlement with Visa on Solana. Back-end settlement can change without changing consumer cards.",
+    "limit": "Later Visa aggregate volume is multichain, not Solana-only.",
+    "sourceIds": ["visa-banks"]
+  },
+  {
+    "id": "milestone-3",
+    "name": "WisdomTree",
+    "group": "Capital markets",
+    "date": "2026-01-28",
+    "stage": "Live product",
+    "summary": "Expanded tokenized-fund ecosystem to Solana. Adds regulated investment products to the network.",
+    "limit": "Multichain distribution; product eligibility and rights apply.",
+    "sourceIds": ["wisdomtree"]
+  },
+  {
+    "id": "milestone-4",
+    "name": "Solana Foundation; Mastercard; Worldpay; Western Union",
+    "group": "Infrastructure",
+    "date": "2026-03-24",
+    "stage": "Pilot",
+    "summary": "Launched SDP issuance and payments modules with over 20 infrastructure partners in devnet sandbox. Packages infrastructure for enterprise developers.",
+    "limit": "Sandbox module launch is not production adoption by every named user; trading planned later.",
+    "sourceIds": ["research-45"]
+  },
+  {
+    "id": "milestone-5",
+    "name": "Singapore Gulf Bank",
+    "group": "Bank settlement",
+    "date": "2026-04-17",
+    "stage": "Live product",
+    "summary": "Introduced bank-account-integrated USDC mint/redeem for corporate and HNW customers. Connects bank treasury and stablecoins.",
+    "limit": "Multichain; above $100,000 launch threshold; fee promotion temporary.",
+    "sourceIds": ["sgb"]
+  },
+  {
+    "id": "milestone-6",
+    "name": "Western Union; Anchorage Digital Bank",
+    "group": "Cash & remittances",
+    "date": "2026-05-04",
+    "stage": "Live product",
+    "summary": "Launched USDPT on Solana with Anchorage as issuer. Creates a settlement asset for developing payment workflows.",
+    "limit": "Does not mean all Western Union remittances moved onchain.",
+    "sourceIds": ["wu"]
+  },
+  {
+    "id": "milestone-7",
+    "name": "Mastercard",
+    "group": "Bank settlement",
+    "date": "2026-06-03",
+    "stage": "Announced",
+    "summary": "Expanded settlement plans include stablecoins across eight named networks including Solana. Institutions get more settlement timing and asset options.",
+    "limit": "Early USDC flows in select markets; broader rollout planned; no Solana-specific volume.",
+    "sourceIds": ["research-46"]
+  },
+  {
+    "id": "milestone-8",
+    "name": "Mastercard; Solana Foundation; other participants",
+    "group": "Infrastructure",
+    "date": "2026-06-10",
+    "stage": "Announced",
+    "summary": "Introduced Agent Pay for Machines with credentialing, permissioning and multirail settlement. Targets machine-speed authorized payments.",
+    "limit": "Participation and launch do not establish large paid usage.",
+    "sourceIds": ["mastercard"]
+  },
+  {
+    "id": "milestone-9",
+    "name": "MoneyGram; Solana Foundation",
+    "group": "Infrastructure",
+    "date": "2026-06-22",
+    "stage": "Live product",
+    "summary": "MoneyGram joined SDP as infrastructure partner and became active Solana validator. Institution also operates network infrastructure.",
+    "limit": "Validator operation is distinct from customer payment volume.",
+    "sourceIds": ["research-47"]
+  },
+  {
+    "id": "milestone-10",
+    "name": "Linux Foundation; Coinbase; Solana Foundation; other members",
+    "group": "Infrastructure",
+    "date": "2026-07-14",
+    "stage": "Live product",
+    "summary": "x402 Foundation became operational under open governance. Standardizes HTTP payment infrastructure.",
+    "limit": "Governance launch, not proof of mass agent purchases; multichain standard.",
+    "sourceIds": ["research-48"]
+  },
+  {
+    "id": "milestone-11",
+    "name": "MoneyGram; Solana Foundation; Rift",
+    "group": "Cash & remittances",
+    "date": "2026-08-11",
+    "stage": "Live product",
+    "summary": "Ramps API launched on Solana with cash deposits in 25+ countries and withdrawals in 170+ countries and territories. Connects wallets to physical cash distribution.",
+    "limit": "Supported geography is availability, not adoption or universal location coverage.",
+    "sourceIds": ["moneygram"]
+  },
+  {
+    "id": "cushy",
+    "name": "Coinbase AM · Superstate",
+    "group": "Capital markets",
+    "date": "2026-07",
+    "stage": "Live product",
+    "summary": "CUSHY tokenized stablecoin yield-fund share class added to Solana in July.",
+    "limit": "Qualified purchasers only. DeFi integrations described as coming soon; not instant redemption.",
+    "sourceIds": ["cushy", "roundup"]
+  },
+  {
+    "id": "paysh",
+    "name": "Solana Foundation · Google Cloud",
+    "group": "Infrastructure",
+    "date": "2026-05-05",
+    "stage": "Live product",
+    "summary": "Pay.sh coordinates discovery and pay-per-request API access using x402 and MPP.",
+    "limit": "Payment access does not verify whether the returned work is correct.",
+    "sourceIds": ["paysh"]
+  }
+]

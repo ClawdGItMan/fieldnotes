@@ -1,0 +1,369 @@
+[
+  {
+    "id": "x402",
+    "title": "x402 seller guide",
+    "url": "https://docs.x402.org/getting-started/quickstart-for-sellers",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "facilitator",
+    "title": "x402 facilitator",
+    "url": "https://docs.x402.org/core-concepts/facilitator",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "mpp",
+    "title": "Stripe machine-payment availability",
+    "url": "https://docs.stripe.com/payments/machine",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "mpp-launch",
+    "title": "Stripe: Machine Payments Protocol",
+    "url": "https://stripe.com/blog/machine-payments-protocol",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "ucp",
+    "title": "Google: Universal Commerce Protocol",
+    "url": "https://developers.googleblog.com/under-the-hood-universal-commerce-protocol-ucp/",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-01-11"
+  },
+  {
+    "id": "ap2",
+    "title": "Google: agent protocol guide",
+    "url": "https://developers.googleblog.com/developers-guide-to-ai-agent-protocols/",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "acp",
+    "title": "OpenAI: product discovery and merchant checkout",
+    "url": "https://openai.com/index/powering-product-discovery-in-chatgpt/",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-03-24"
+  },
+  {
+    "id": "virtuals",
+    "title": "Virtuals: Agent Commerce Protocol",
+    "url": "https://whitepaper.virtuals.io/acp-product-resources",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "evaluation",
+    "title": "Virtuals: optional evaluation",
+    "url": "https://whitepaper.virtuals.io/acp-product-resources/acp-dev-onboarding-guide/tips-and-troubleshooting/optional-evaluation-in-acp",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "wallets",
+    "title": "Coinbase Agentic Wallets",
+    "url": "https://www.coinbase.com/developer-platform/products/agentic-wallets",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "visa-agent",
+    "title": "Visa Intelligent Commerce APIs",
+    "url": "https://developer.visa.com/capabilities/visa-intelligent-commerce",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "mastercard",
+    "title": "Mastercard Agent Pay for Machines",
+    "url": "https://www.mastercard.com/us/en/news-and-trends/press/2026/june/mastercard-launches-agent-pay-for-machines.html",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-06-10"
+  },
+  {
+    "id": "tempo",
+    "title": "Tempo mainnet announcement",
+    "url": "https://tempo.xyz/blog/mainnet/",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-03-18"
+  },
+  {
+    "id": "arc",
+    "title": "Circle: Arc private mainnet and planned public launch",
+    "url": "https://www.circle.com/es/pressroom/circle-announces-founding-validator-cohort-and-major-integrations-for-arc-ahead-of-september-16-mainnet-launch",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-08-05"
+  },
+  {
+    "id": "bridge",
+    "title": "Bridge payment routes",
+    "url": "https://apidocs.bridge.xyz/get-started/introduction/what-we-support/payment-routes",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "bvnk",
+    "title": "BVNK USD wallet update",
+    "url": "https://www.bvnk.com/blog/your-usd-wallet-just-got-an-upgrade",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-07-07"
+  },
+  {
+    "id": "adoption",
+    "title": "Visa–Artemis: agentic payments from the ground up",
+    "url": "https://www.visa.com/en-us/thought-leadership/innovation/agentic-payments-from-the-ground-up",
+    "asOf": "2026-04-21",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-07-14",
+    "scope": "Filtered onchain estimates; not all agent commerce; data through April 21."
+  },
+  {
+    "id": "alpenglow",
+    "title": "Solana Alpenglow upgrade",
+    "url": "https://solana.com/upgrades/alpenglow",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "anza",
+    "title": "Anza: Alpenglow design",
+    "url": "https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "commitment",
+    "title": "Solana RPC commitment definitions",
+    "url": "https://solana.com/docs/rpc#configuring-state-commitment",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "fees",
+    "title": "Solana fee rules",
+    "url": "https://solana.com/docs/core/fees",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "clients",
+    "title": "Firedancer and Frankendancer",
+    "url": "https://github.com/firedancer-io/firedancer",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "nakamoto",
+    "title": "Solana network health report",
+    "url": "https://solana.com/uk/news/network-health-report-june-2025",
+    "asOf": "2025-04-16",
+    "checkedAt": "2026-09-05",
+    "scope": "Historical voting coefficient definition and snapshot; not a current reading."
+  },
+  {
+    "id": "hosting",
+    "title": "Solana delegation criteria",
+    "url": "https://solana.org/delegation-criteria",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "clarity",
+    "title": "Congress: Digital Asset Market Clarity Act",
+    "url": "https://www.congress.gov/bill/119th-congress/house-bill/3633",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "scope": "Introduced-bill summary; final legal scope depends on enacted text."
+  },
+  {
+    "id": "senate",
+    "title": "Senate Press Gallery notice",
+    "url": "https://www.dailypress.senate.gov/friday-september-4-2026/",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-09-04"
+  },
+  {
+    "id": "sec",
+    "title": "SEC liquid-staking staff statement",
+    "url": "https://www.sec.gov/newsroom/speeches-statements/corpfin-certain-liquid-staking-activities-080525",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2025-08-05"
+  },
+  {
+    "id": "visa-banks",
+    "title": "Visa: US stablecoin settlement",
+    "url": "https://corporate.visa.com/en/sites/visa-perspectives/newsroom/visa-launches-stablecoin-settlement-in-the-united-states.html",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2025-12-16"
+  },
+  {
+    "id": "sgb",
+    "title": "Singapore Gulf Bank mint and redeem",
+    "url": "https://www.sgb.com/insights/singapore-gulf-bank-launches-stablecoin-mint-and-redeem-service",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-04-17"
+  },
+  {
+    "id": "wu",
+    "title": "Western Union launches USDPT",
+    "url": "https://ir.westernunion.com/news/archived-press-releases/press-release-details/2026/Western-Union-Launches-USDPT-on-Solana-Advancing-Regulated-Digital-Infrastructure-for-Global-Payments/default.aspx",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-05-04"
+  },
+  {
+    "id": "moneygram",
+    "title": "MoneyGram Ramps launch",
+    "url": "https://solana.com/news/moneygram-ramps",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-08-11"
+  },
+  {
+    "id": "jpm",
+    "title": "J.P. Morgan: Galaxy commercial paper",
+    "url": "https://www.jpmorgan.com/about-us/corporate-news/2025/jpmorgan-commercial-paper-issuance-solana-blockchain",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2025-12-11"
+  },
+  {
+    "id": "wisdomtree",
+    "title": "WisdomTree expands to Solana",
+    "url": "https://ir.wisdomtree.com/news-events/press-releases/detail/774/wisdomtree-expands-tokenization-ecosystem-to-solana",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-01-28"
+  },
+  {
+    "id": "cushy",
+    "title": "Superstate: CUSHY",
+    "url": "https://superstate.com/assets/cushy",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "roundup",
+    "title": "Solana July ecosystem roundup",
+    "url": "https://solana.com/news/solana-ecosystem-roundup-july-2026",
+    "asOf": "2026-07-31",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "r3",
+    "title": "R3 Solana notary documentation",
+    "url": "https://docs.r3.com/en/platform/corda/4.14/enterprise/notary/solana-notary.html",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05"
+  },
+  {
+    "id": "paysh",
+    "title": "Solana Foundation and Google Cloud: Pay.sh",
+    "url": "https://solana.com/uk/news/solana-foundation-launches-pay-sh-in-collaboration-with-google-cloud",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "publishedAt": "2026-05-05"
+  },
+  {
+    "id": "research-38",
+    "title": "Circulating stablecoins — DefiLlama",
+    "url": "https://stablecoins.llama.fi/stablecoincharts/Solana",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  },
+  {
+    "id": "research-39",
+    "title": "DeFi TVL (default methodology) — DefiLlama",
+    "url": "https://api.llama.fi/v2/historicalChainTvl/Solana",
+    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  },
+  {
+    "id": "research-40",
+    "title": "Distributed RWA value, excluding stablecoins — source",
+    "url": "https://app.rwa.xyz/networks/solana",
+    "asOf": "2026-09-06",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  },
+  {
+    "id": "research-41",
+    "title": "Chain transaction fees — DefiLlama",
+    "url": "https://api.llama.fi/summary/fees/solana?dataType=dailyFees",
+    "asOf": "2026-08-31",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  },
+  {
+    "id": "research-42",
+    "title": "DEX spot turnover — DefiLlama",
+    "url": "https://api.llama.fi/overview/dexs/Solana?excludeTotalDataChartBreakdown=true",
+    "asOf": "2026-08-31",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  },
+  {
+    "id": "research-43",
+    "title": "Observable real-economy stablecoin payments — source",
+    "url": "https://www.bcg.com/assets/2026/white-paper-stablecoin-payments-truth-behind-numbers.pdf",
+    "asOf": "2025-12-31",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  },
+  {
+    "id": "research-44",
+    "title": "R3; Solana Foundation — Collaboration to connect Corda/private networks with Solana.",
+    "url": "https://r3.com/r3-signals-strategic-shift-to-lead-the-convergence-of-public-and-private-blockchains-to-deliver-internet-capital-markets-through-collaboration-with-solana-foundation/",
+    "asOf": "2025-05-22",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  },
+  {
+    "id": "research-45",
+    "title": "Solana Foundation; Mastercard; Worldpay; Western Union — Launched SDP issuance and payments modules with over 20 infrastructure partners in devnet sandbox.",
+    "url": "https://solana.com/news/solana-developer-platform",
+    "asOf": "2026-03-24",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  },
+  {
+    "id": "research-46",
+    "title": "Mastercard — Expanded settlement plans include stablecoins across eight named networks including Solana.",
+    "url": "https://www.mastercard.com/global/en/news-and-trends/press/2026/june/mastercard-expands-settlement-capabilities-to-include-stablecoin.html",
+    "asOf": "2026-06-03",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  },
+  {
+    "id": "research-47",
+    "title": "MoneyGram; Solana Foundation — MoneyGram joined SDP as infrastructure partner and became active Solana validator.",
+    "url": "https://solana.com/news/money-gram-joins-solana-developer-platform",
+    "asOf": "2026-06-22",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  },
+  {
+    "id": "research-48",
+    "title": "Linux Foundation; Coinbase; Solana Foundation; other members — x402 Foundation became operational under open governance.",
+    "url": "https://www.linuxfoundation.org/press/linux-foundation-announces-operational-launch-of-x402-foundation-to-standardize-internet-native-payments-for-ai-agents-and-applications",
+    "asOf": "2026-07-14",
+    "checkedAt": "2026-09-05",
+    "scope": ""
+  }
+]

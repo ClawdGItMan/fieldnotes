@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "vaultRoot": "/Users/me/Projects/Crypto Knowledge",
+  "notes": [
+    {
+      "file": "Signals/2026-09-05 - Solana Study Conversation.md",
+      "label": "Solana study reference",
+      "sections": [
+        {
+          "heading": "Alpenglow and finality",
+          "id": "study-finality",
+          "title": "Alpenglow, in a few sentences",
+          "topic": "study"
+        },
+        {
+          "heading": "Validator clients and decentralization",
+          "id": "study-decentralization",
+          "title": "What decentralization measures miss",
+          "topic": "study"
+        },
+        {
+          "heading": "Why CLARITY matters",
+          "id": "study-clarity",
+          "title": "CLARITY: procedure versus law",
+          "topic": "study"
+        },
+        {
+          "heading": "Buybacks, emissions and value capture",
+          "id": "study-buybacks",
+          "title": "Buybacks do not tell the whole story",
+          "topic": "study"
+        },
+        {
+          "heading": "Mainstream institutional adoption",
+          "id": "study-institutions",
+          "title": "Institutional adoption: the recall sheet",
+          "topic": "study"
+        },
+        {
+          "heading": "Familiar protocol reference",
+          "id": "study-protocols",
+          "title": "Seven familiar Solana protocols",
+          "topic": "study"
+        }
+      ]
+    }
+  ],
+  "output": "content/generated-notes.json",
+  "policy": {
+    "unknownSources": "retain-last-good",
+    "missingSections": "retain-last-good",
+    "authoredContent": "never-overwrite",
+    "reviewDates": "preserve-source-date",
+    "scope": "curated crypto, AI and finance notes only"
+  }
+}

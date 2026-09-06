@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ap2",
+    "name": "Google AP2",
+    "layer": "Authorization",
+    "contribution": "Signed mandates tie user intent to constraints.",
+    "status": "Public protocol",
+    "limit": "A signature cannot resolve ambiguous intent.",
+    "sourceIds": ["ap2"]
+  },
+  {
+    "id": "ucp",
+    "name": "Google UCP",
+    "layer": "Commerce",
+    "contribution": "Discovery, checkout and order capabilities.",
+    "status": "Announced Jan 2026",
+    "limit": "Collaboration is not universal merchant rollout.",
+    "sourceIds": ["ucp"]
+  },
+  {
+    "id": "acp",
+    "name": "OpenAI / Stripe ACP",
+    "layer": "Commerce",
+    "contribution": "Merchant commerce and product discovery.",
+    "status": "Direction updated Mar 2026",
+    "limit": "Not the Virtuals protocol; checkout support varies.",
+    "sourceIds": ["acp"]
+  },
+  {
+    "id": "x402",
+    "name": "x402",
+    "layer": "Service payments",
+    "contribution": "HTTP challenges and signed payment responses.",
+    "status": "Public implementation",
+    "limit": "Scheme/network support varies; not always one transfer per call.",
+    "sourceIds": ["x402", "facilitator"]
+  },
+  {
+    "id": "mpp",
+    "name": "MPP",
+    "layer": "Service payments",
+    "contribution": "Charges and sessions across payment methods.",
+    "status": "Stripe availability documented",
+    "limit": "MPP is not synonymous with Tempo; cards and Solana also appear.",
+    "sourceIds": ["mpp", "mpp-launch"]
+  },
+  {
+    "id": "virtuals",
+    "name": "Virtuals ACP",
+    "layer": "Agent jobs",
+    "contribution": "Terms, escrow, delivery and evaluation.",
+    "status": "Public SDK and job docs",
+    "limit": "An evaluator can be wrong.",
+    "sourceIds": ["virtuals", "evaluation"]
+  },
+  {
+    "id": "wallet",
+    "name": "Coinbase Agentic Wallets",
+    "layer": "Credentials",
+    "contribution": "Key protection and spending controls.",
+    "status": "Documented product",
+    "limit": "A funded wallet is not unlimited permission.",
+    "sourceIds": ["wallets"]
+  },
+  {
+    "id": "networks",
+    "name": "Visa / Mastercard",
+    "layer": "Credentials",
+    "contribution": "Agent credentials, controls and acceptance.",
+    "status": "APIs / announced products",
+    "limit": "Provider, deployment and market qualifications apply.",
+    "sourceIds": ["visa-agent", "mastercard"]
+  },
+  {
+    "id": "base-solana",
+    "name": "Base / Solana",
+    "layer": "Settlement",
+    "contribution": "Supported networks for stablecoin transfers.",
+    "status": "Production integration guides",
+    "limit": "No permanent adoption ranking follows.",
+    "sourceIds": ["x402", "mpp"]
+  },
+  {
+    "id": "tempo",
+    "name": "Tempo",
+    "layer": "Settlement",
+    "contribution": "Payment-focused network and sessions.",
+    "status": "Mainnet Mar 18, 2026",
+    "limit": "Channel events are not dollar volume.",
+    "sourceIds": ["tempo"]
+  },
+  {
+    "id": "arc",
+    "name": "Circle / Arc",
+    "layer": "Settlement",
+    "contribution": "Stablecoin financial infrastructure.",
+    "status": "Private mainnet; public planned Sep 16",
+    "limit": "Issuer success across chains differs from Arc chain share.",
+    "sourceIds": ["arc"]
+  },
+  {
+    "id": "offramp",
+    "name": "Bridge / BVNK",
+    "layer": "Fiat access",
+    "contribution": "Conversion, payouts and reconciliation.",
+    "status": "Documented APIs",
+    "limit": "Onchain settlement is not completed bank payout.",
+    "sourceIds": ["bridge", "bvnk"]
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "developers",
+    "label": "Monthly active open-source developers",
+    "reason": "Search-index snapshot only; direct extraction did not reproduce value and exact rolling period not confirmed. Do not display as confirmed headline.",
+    "source": "https://www.developerreport.com/ecosystems/solana"
+  },
+  {
+    "id": "app-revenue",
+    "label": "App revenue",
+    "reason": "Aggregate includes Solana Chain revenue; raw aggregate is not app-only revenue. Do not chart unfiltered.",
+    "source": "https://api.llama.fi/overview/fees/Solana?excludeTotalDataChartBreakdown=true&dataType=dailyRevenue"
+  }
+]

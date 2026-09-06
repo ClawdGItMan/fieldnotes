@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "notes": [
+    {
+      "id": "study-buybacks",
+      "title": "Buybacks do not tell the whole story",
+      "topic": "study",
+      "markdown": "**Synthesis:** compare recurring buyback demand with recurring supply becoming available over the same period. Revenue-funded purchases can shrink during weak markets while scheduled releases continue. But unlocks are not necessarily sales, and buybacks are not mathematically doomed.\n\n- **Issuance** creates tokens; **unlocks** make existing tokens transferable; **buybacks** purchase tokens; **burns** destroy them. A treasury buyback does not automatically remove supply permanently.\n- Hypothetical illustration, September 5: buying 5 tokens while 10 unlock gives 0.5× gross coverage. It does not forecast price or imply all 10 will sell.\n- App revenue, validator income, tokenholder returns and token price are different outcomes. **Correction:** Solana still burns 50% of base fees; prioritization fees go to validators. “Solana has no fee burn” is inaccurate. [Official fee rules, checked September 5](https://solana.com/docs/core/fees)\n\n**Say it aloud:** “A buyback is one source of demand. I still need to know new available supply, who sells, and where the purchased tokens go.”\n\nDeeper: [[Token Buybacks and Emissions]] · [[Value Capture]].",
+      "reviewedAt": "2026-09-05",
+      "sourceLabel": "Solana study reference",
+      "sourceUrls": [
+        "https://solana.com/docs/core/fees"
+      ],
+      "provenance": {
+        "kind": "curated-vault-section",
+        "label": "Solana study reference"
+      },
+      "contentHash": "1491382091bed2b6937c4a73bd30ac2c64c0c72697fbd26fa35a4d60be05c0e1"
+    },
+    {
+      "id": "study-clarity",
+      "title": "CLARITY: procedure versus law",
+      "topic": "study",
+      "markdown": "- Its core subject is the legal framework for digital commodities and SEC/CFTC responsibilities. **Synthesis:** clearer statutory rules can make long-term planning less dependent on changing agency interpretations; passage would not automatically approve every token or business model. [Congressional summary of the introduced bill](https://www.congress.gov/bill/119th-congress/house-bill/3633)\n- Staff statements and statutes have different legal weight. The SEC’s liquid-staking statement explicitly says it has no legal force and covers specified circumstances. [SEC statement](https://www.sec.gov/newsroom/speeches-statements/corpfin-certain-liquid-staking-activities-080525)\n- **Dated procedural check:** the Senate Press Gallery’s September 4 notice says the H.R. 3633 cloture motion ripens September 15, 2026, at 2:15 p.m. That is not a record of enactment. [Senate notice](https://www.dailypress.senate.gov/friday-september-4-2026/)\n\n**Say it aloud:** “CLARITY matters for durable market rules; a procedural vote is not the same as a bill becoming law.”\n\nDeeper: [[Policy and Regulation]]; the older note’s vote predictions and product-specific legal conclusions were not comprehensively rechecked.",
+      "reviewedAt": "2026-09-05",
+      "sourceLabel": "Solana study reference",
+      "sourceUrls": [
+        "https://www.congress.gov/bill/119th-congress/house-bill/3633",
+        "https://www.sec.gov/newsroom/speeches-statements/corpfin-certain-liquid-staking-activities-080525",
+        "https://www.dailypress.senate.gov/friday-september-4-2026/"
+      ],
+      "provenance": {
+        "kind": "curated-vault-section",
+        "label": "Solana study reference"
+      },
+      "contentHash": "943924306a1660d641da50bf8c68c3bd2594f5bcdae68b55c682b41a036c84b2"
+    },
+    {
+      "id": "study-decentralization",
+      "title": "What decentralization measures miss",
+      "topic": "study",
+      "markdown": "- A validator is a participant; its **client is the software** implementing the shared rules. Agave and Jito-Solana share a lineage; full Firedancer is independently implemented, while Frankendancer combines Firedancer components with Agave. Independent code reduces shared-bug risk. [Agave](https://github.com/anza-xyz/agave), [Jito-Solana](https://github.com/jito-foundation/jito-solana), [Firedancer](https://github.com/firedancer-io/firedancer)\n- **Nakamoto coefficient:** for the Solana voting metric discussed, count the smallest set of largest validators reaching roughly one-third of voting power—enough to obstruct finalization, not automatically steal funds or rewrite valid history. [Historical metric definition](https://solana.com/uk/news/network-health-report-june-2025)\n- **19 was supplied in the study discussion, not verified as today’s value.** It suggests meaningful distribution, with no universal “good” cutoff. Compare consistent definitions, trends, operator independence, software, geography and shared hosting. [Hosting concentration criteria](https://solana.org/delegation-criteria)\n\n**Say it aloud:** “The coefficient counts how many validators can block progress; it does not tell me how independent those validators really are.”\n\nDeeper: [[Validator Clients]] · [[Network Reliability and Concentration]].",
+      "reviewedAt": "2026-09-05",
+      "sourceLabel": "Solana study reference",
+      "sourceUrls": [
+        "https://github.com/anza-xyz/agave",
+        "https://github.com/jito-foundation/jito-solana",
+        "https://github.com/firedancer-io/firedancer",
+        "https://solana.com/uk/news/network-health-report-june-2025",
+        "https://solana.org/delegation-criteria"
+      ],
+      "provenance": {
+        "kind": "curated-vault-section",
+        "label": "Solana study reference"
+      },
+      "contentHash": "f51781ee93d1371d358ad1a828b4614b854e3f649cb28ae786f8c5b072322796"
+    },
+    {
+      "id": "study-finality",
+      "title": "Alpenglow, in a few sentences",
+      "topic": "study",
+      "markdown": "- **Mechanism:** Votor replaces TowerBFT voting with direct validator messages and quorum certificates; Rotor is a later block-propagation upgrade. In the design checked September 5, the fast path uses at least 80% stake in one round; the fallback uses 60% thresholds over two rounds. [Solana upgrade description](https://solana.com/upgrades/alpenglow)\n- **Latency:** Anza’s approximately 150 ms median is a simulation-based finality estimate excluding computation overhead, not a measured end-to-end payment guarantee. Submission, inclusion, execution, RPC and application delays also matter. [Anza](https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana)\n- **Guarantee:** `confirmed` means a supermajority voted; `finalized` is the network’s strongest commitment state. Faster finality shortens the wait before acting on that stronger state. It does not eliminate software, custody or application risk. [RPC commitment definitions](https://solana.com/docs/rpc#configuring-state-commitment)\n\n**Say it aloud:** “Alpenglow aims to make strong settlement confirmation fast enough to wait for; finality time and total user waiting time are different measurements.”\n\nDeeper: [[Alpenglow]] · [[Finality — Optimistic vs Deterministic]] · [[Slot Times and Latency]].",
+      "reviewedAt": "2026-09-05",
+      "sourceLabel": "Solana study reference",
+      "sourceUrls": [
+        "https://solana.com/upgrades/alpenglow",
+        "https://www.anza.xyz/blog/alpenglow-a-new-consensus-for-solana",
+        "https://solana.com/docs/rpc#configuring-state-commitment"
+      ],
+      "provenance": {
+        "kind": "curated-vault-section",
+        "label": "Solana study reference"
+      },
+      "contentHash": "0348bf685a6781bd11068e03139fe12c385b0f4dec648b83a816ae662d3ce518"
+    },
+    {
+      "id": "study-institutions",
+      "title": "Institutional adoption: the recall sheet",
+      "topic": "study",
+      "markdown": "### Bank settlement and conversion\n\n| Who | Confirmed scope | Date and source |\n|---|---|---|\n| Visa · Cross River Bank · Lead Bank | These banks started settling Visa obligations in USDC on Solana, with seven-day settlement; consumer card checkout is unchanged. Select participants, within Visa's multichain strategy. | [Dec. 16, 2025 — Visa](https://corporate.visa.com/en/sites/visa-perspectives/newsroom/visa-launches-stablecoin-settlement-in-the-united-states.html) |\n| Singapore Gulf Bank | Launched bank-account mint/redeem service for corporate and high-net-worth customers; Solana among supported chains. USDC transactions above $100,000 at launch; fee waiver was promotional. | [Apr. 17, 2026 — SGB](https://www.sgb.com/insights/singapore-gulf-bank-launches-stablecoin-mint-and-redeem-service) |\n\n### Remittances and cash access\n\n| Who | Confirmed scope | Date and source |\n|---|---|---|\n| Western Union · Anchorage Digital Bank | USDPT launched on Solana, issued by Anchorage; agent treasury and consumer services were still developing. Token launch does not mean the whole remittance network migrated. | [May 4, 2026 — Western Union](https://ir.westernunion.com/news/archived-press-releases/press-release-details/2026/Western-Union-Launches-USDPT-on-Solana-Advancing-Regulated-Digital-Infrastructure-for-Global-Payments/default.aspx) |\n| MoneyGram | Ramps launched for Solana apps: cash-in in 25+ countries, cash-out in 170+ countries/territories; Rift identified as the first integrated wallet. Footprint measures availability, not usage. | [Aug. 11, 2026 — launch report](https://solana.com/news/moneygram-ramps) |\n\n### Capital markets and tokenized funds\n\n| Who | Confirmed scope | Date and source |\n|---|---|---|\n| J.P. Morgan · Galaxy | Arranged a commercial-paper issuance on public Solana with delivery-versus-payment; Coinbase and Franklin Templeton purchased it, with proceeds in USDC. One securities transaction, not bankwide adoption. | [Dec. 11, 2025 — J.P. Morgan](https://www.jpmorgan.com/about-us/corporate-news/2025/jpmorgan-commercial-paper-issuance-solana-blockchain) |\n| WisdomTree | Extended its regulated tokenized fund suite to Solana, including money-market, equity and fixed-income products, as part of a multichain strategy. | [Jan. 28, 2026 — WisdomTree](https://ir.wisdomtree.com/news-events/press-releases/detail/774/wisdomtree-expands-tokenization-ecosystem-to-solana) |\n| Coinbase Asset Management · Superstate | CUSHY share class added to Solana; qualified-purchaser restrictions apply. DeFi integrations are described as coming soon; tokenization does not imply instant redemption. | [July 2026 — roundup](https://solana.com/news/solana-ecosystem-roundup-july-2026); [current fund page checked Sept. 5](https://superstate.com/assets/cushy) |\n\n**Say it aloud:** “Look for live settlement, bank conversion and cash access, then ask about repeat usage and volume.” This is our analytical framework, not a proven ranking. Deeper: [[Institutional Rails and RWAs]] · [[Payments on Solana]] · [[Tokenized Equities]].",
+      "reviewedAt": "2026-09-05",
+      "sourceLabel": "Solana study reference",
+      "sourceUrls": [
+        "https://corporate.visa.com/en/sites/visa-perspectives/newsroom/visa-launches-stablecoin-settlement-in-the-united-states.html",
+        "https://www.sgb.com/insights/singapore-gulf-bank-launches-stablecoin-mint-and-redeem-service",
+        "https://ir.westernunion.com/news/archived-press-releases/press-release-details/2026/Western-Union-Launches-USDPT-on-Solana-Advancing-Regulated-Digital-Infrastructure-for-Global-Payments/default.aspx",
+        "https://solana.com/news/moneygram-ramps",
+        "https://www.jpmorgan.com/about-us/corporate-news/2025/jpmorgan-commercial-paper-issuance-solana-blockchain",
+        "https://ir.wisdomtree.com/news-events/press-releases/detail/774/wisdomtree-expands-tokenization-ecosystem-to-solana",
+        "https://solana.com/news/solana-ecosystem-roundup-july-2026",
+        "https://superstate.com/assets/cushy"
+      ],
+      "provenance": {
+        "kind": "curated-vault-section",
+        "label": "Solana study reference"
+      },
+      "contentHash": "9dbcefcaf6a001d65ac16a0f6e771234db192e19325677a3cd87b540c1de0d66"
+    },
+    {
+      "id": "study-protocols",
+      "title": "Seven familiar Solana protocols",
+      "topic": "study",
+      "markdown": "Descriptions carried from the study reference; linked official references are not a claim of a fresh product audit.\n\n| Group | Protocol | One-line reminder |\n|---|---|---|\n| Trading and liquidity | [Jupiter](https://jup.ag/) | Swaps, perpetuals, lending/borrowing and portfolio management. |\n| Trading and liquidity | [Raydium](https://docs.raydium.io/introduction/what-is-raydium) | DEX liquidity pools and swaps; LaunchLab token launches. |\n| Trading and liquidity | [Meteora](https://github.com/MeteoraAg) | Liquidity pools and launch infrastructure, including liquidity provision across chosen price ranges. |\n| Lending and staking | [Kamino](https://kamino.com/lend/) | Lending, collateralized borrowing and automated liquidity strategies. |\n| Lending and staking | [Jito](https://www.jito.network/jitosol/) | Stake SOL for JitoSOL, a liquid stake representation accruing rewards and usable in DeFi. |\n| Yield and payment finance | [Exponent](https://docs.exponent.finance/) | Separates principal and future yield into tradable assets for fixed-at-maturity or variable-yield exposure. |\n| Yield and payment finance | [Huma](https://huma.finance/) | Finances payment settlement, trade finance and marketplace payouts. |",
+      "reviewedAt": "2026-09-05",
+      "sourceLabel": "Solana study reference",
+      "sourceUrls": [
+        "https://jup.ag/",
+        "https://docs.raydium.io/introduction/what-is-raydium",
+        "https://github.com/MeteoraAg",
+        "https://kamino.com/lend/",
+        "https://www.jito.network/jitosol/",
+        "https://docs.exponent.finance/",
+        "https://huma.finance/"
+      ],
+      "provenance": {
+        "kind": "curated-vault-section",
+        "label": "Solana study reference"
+      },
+      "contentHash": "bcb953665775faf7e6b27c5d1ac01172df6b7e3e45d91b99c11a5c2824061fce"
+    }
+  ],
+  "issues": []
+}
