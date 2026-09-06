@@ -1,3 +1,4 @@
+/* oxlint-disable jsx-a11y/prefer-tag-over-role -- An inline SVG chart needs role="img" and cannot be replaced by an img element. */
 'use client';
 import { useState } from 'react';
 import { Tabs, TabsList, TabsTrigger, TabsContent } from '@/components/ui/tabs';
@@ -201,10 +202,10 @@ export function ProtocolComparison() {
           </TableBody>
         </Table>
       </div>
-      <p role="status" className="small-meta results-count">
+      <output className="small-meta results-count">
         {rows.length} entries · Reviewed September 5, 2026 · Layers, not a
         ranking.
-      </p>
+      </output>
     </div>
   );
 }
@@ -474,9 +475,9 @@ export function InstitutionTimeline() {
           Reset filters
         </button>
       </div>
-      <p role="status" className="small-meta results-count">
+      <output className="small-meta results-count">
         {rows.length} milestones · Status describes evidence at the event date.
-      </p>
+      </output>
       <div className="timeline">
         {rows.map((i) => (
           <article key={i.id} className="timeline-row">
@@ -575,10 +576,10 @@ export function LibraryExplorer() {
           options={['All topics', ...Object.values(labels)]}
         />
       </div>
-      <p role="status" className="small-meta results-count">
+      <output className="small-meta results-count">
         {rows.length} {rows.length === 1 ? 'piece' : 'pieces'}
         {query ? ' matching “' + query + '”' : ''}
-      </p>
+      </output>
       <div className="library-results">
         {rows.map((a, i) => (
           <article key={a.id}>

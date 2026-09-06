@@ -9,13 +9,13 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "wrangler dev --config dist/server/wrangler.json",
-    "lint": "oxlint",
+    "lint": "oxlint app components/editorial content scripts tests lib components/ui/input.tsx components/ui/select.tsx components/ui/table.tsx components/ui/tabs.tsx",
     "format": "oxfmt",
     "sync:notes": "node scripts/sync-notes.mjs",
     "refresh:data": "node scripts/refresh-data.mjs",
     "test": "node --test tests/*.test.mjs",
     "typecheck": "tsc --noEmit",
-    "check": "npm run sync:notes && npm test && npm run typecheck",
+    "check": "npm run sync:notes && npm test && npm run typecheck && npm run lint",
     "prepare:publish": "npm run check && npm run build"
   },
   "dependencies": {

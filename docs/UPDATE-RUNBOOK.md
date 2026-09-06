@@ -61,3 +61,7 @@ The initial four API checks succeeded. OpenAI's product page and Congress return
 ## Ownership and recovery
 
 Keep old saved Site versions. If a new build or deployment fails, leave the current live deployment in place. Do not claim a refresh occurred because a scheduler ran. A successful publication, retained source date, and explicit source-check results are different facts. When schema or methodology changes, pause that metric's auto-refresh and reconcile it before resuming. Never join incompatible RWA series or infer a current market share from a historical midpoint calculation.
+
+## Navigation and lint scope
+
+Standard page links avoid a reproduced Vinext production prefetch exception. The Next.js-only no-html-link-for-pages preference is disabled for this reason. Lint covers authored application/data/update code and the four shadcn primitives actually used; unused scaffold components are outside that check. The inline SVG has an explicit image role and an accessible data table.
