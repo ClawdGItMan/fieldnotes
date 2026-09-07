@@ -2,16 +2,16 @@
   {
     "id": "stablecoins",
     "label": "Circulating stablecoins",
-    "value": 16607547915.19,
+    "value": 16686042305.17,
     "unit": "USD",
-    "period": "2026-09-05",
+    "period": "2026-09-06",
     "scope": "Solana",
     "definition": "Sum of totalCirculatingUSD across all peg types; includes circulating native and bridged supply tracked by DefiLlama.",
     "sourceId": "research-38",
-    "checkedAt": "2026-09-05",
-    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-06",
+    "asOf": "2026-09-06",
     "kind": "snapshot",
-    "aggregation": "Point-in-time API observation at listed UTC timestamp; month-end dates plus Sep 5 snapshot. Not monthly average.",
+    "aggregation": "Point-in-time API observation at listed UTC timestamp; month-end dates plus the latest dated snapshot. Not monthly average.",
     "series": [
       {
         "period": "2025-12-31",
@@ -50,24 +50,24 @@
         "value": 15964831872
       },
       {
-        "period": "2026-09-05",
-        "value": 16607547915.19
+        "period": "2026-09-06",
+        "value": 16686042305.17
       }
     ]
   },
   {
     "id": "tvl",
     "label": "DeFi TVL (default methodology)",
-    "value": 5888810402,
+    "value": 5924750516,
     "unit": "USD",
-    "period": "2026-09-05",
+    "period": "2026-09-06",
     "scope": "Solana",
     "definition": "DefiLlama default historical chain DeFi TVL. Do not add separately displayed liquid-staking, borrowing or bridged-TVL categories.",
     "sourceId": "research-39",
-    "checkedAt": "2026-09-05",
-    "asOf": "2026-09-05",
+    "checkedAt": "2026-09-06",
+    "asOf": "2026-09-06",
     "kind": "snapshot",
-    "aggregation": "Point-in-time API observation at listed UTC timestamp; month-end dates plus Sep 5 snapshot. Not monthly average.",
+    "aggregation": "Point-in-time API observation at listed UTC timestamp; month-end dates plus the latest dated snapshot. Not monthly average.",
     "series": [
       {
         "period": "2025-12-31",
@@ -106,8 +106,8 @@
         "value": 5787575494
       },
       {
-        "period": "2026-09-05",
-        "value": 5888810402
+        "period": "2026-09-06",
+        "value": 5924750516
       }
     ]
   },
