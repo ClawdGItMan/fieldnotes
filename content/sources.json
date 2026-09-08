@@ -282,16 +282,16 @@
     "id": "research-38",
     "title": "Circulating stablecoins — DefiLlama",
     "url": "https://stablecoins.llama.fi/stablecoincharts/Solana",
-    "asOf": "2026-09-06",
-    "checkedAt": "2026-09-06",
+    "asOf": "2026-09-08",
+    "checkedAt": "2026-09-08",
     "scope": ""
   },
   {
     "id": "research-39",
     "title": "DeFi TVL (default methodology) — DefiLlama",
     "url": "https://api.llama.fi/v2/historicalChainTvl/Solana",
-    "asOf": "2026-09-06",
-    "checkedAt": "2026-09-06",
+    "asOf": "2026-09-08",
+    "checkedAt": "2026-09-08",
     "scope": ""
   },
   {
