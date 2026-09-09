@@ -2,14 +2,14 @@
   {
     "id": "stablecoins",
     "label": "Circulating stablecoins",
-    "value": 16695009953.350002,
+    "value": 16630430467.3,
     "unit": "USD",
-    "period": "2026-09-08",
+    "period": "2026-09-09",
     "scope": "Solana",
     "definition": "Sum of totalCirculatingUSD across all peg types; includes circulating native and bridged supply tracked by DefiLlama.",
     "sourceId": "research-38",
-    "checkedAt": "2026-09-08",
-    "asOf": "2026-09-08",
+    "checkedAt": "2026-09-09",
+    "asOf": "2026-09-09",
     "kind": "snapshot",
     "aggregation": "Point-in-time API observation at listed UTC timestamp; month-end dates plus the latest dated snapshot. Not monthly average.",
     "series": [
@@ -50,22 +50,22 @@
         "value": 15964831872
       },
       {
-        "period": "2026-09-08",
-        "value": 16695009953.350002
+        "period": "2026-09-09",
+        "value": 16630430467.3
       }
     ]
   },
   {
     "id": "tvl",
     "label": "DeFi TVL (default methodology)",
-    "value": 5869017766,
+    "value": 5943297966,
     "unit": "USD",
-    "period": "2026-09-08",
+    "period": "2026-09-09",
     "scope": "Solana",
     "definition": "DefiLlama default historical chain DeFi TVL. Do not add separately displayed liquid-staking, borrowing or bridged-TVL categories.",
     "sourceId": "research-39",
-    "checkedAt": "2026-09-08",
-    "asOf": "2026-09-08",
+    "checkedAt": "2026-09-09",
+    "asOf": "2026-09-09",
     "kind": "snapshot",
     "aggregation": "Point-in-time API observation at listed UTC timestamp; month-end dates plus the latest dated snapshot. Not monthly average.",
     "series": [
@@ -99,15 +99,15 @@
       },
       {
         "period": "2026-07-31",
-        "value": 4828334694
+        "value": 4836653725
       },
       {
         "period": "2026-08-31",
-        "value": 5787575494
+        "value": 5795894525
       },
       {
-        "period": "2026-09-08",
-        "value": 5869017766
+        "period": "2026-09-09",
+        "value": 5943297966
       }
     ]
   },
